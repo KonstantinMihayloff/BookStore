@@ -18,7 +18,7 @@ class BooksListAdapter(private val books: List<Book>,
 
     // Listener Interface
     interface BooksListAdapterListener {
-
+        fun onBookSelected(book: Book)
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
