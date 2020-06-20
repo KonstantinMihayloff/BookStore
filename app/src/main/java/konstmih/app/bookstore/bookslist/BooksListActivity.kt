@@ -1,7 +1,8 @@
-package konstmih.app.bookstore
+package konstmih.app.bookstore.bookslist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import konstmih.app.bookstore.R
 
 class BooksListActivity : AppCompatActivity() {
 
