@@ -1,5 +1,6 @@
 package konstmih.app.bookstore.bookslist
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import konstmih.app.bookstore.App
 import konstmih.app.bookstore.Book
 import konstmih.app.bookstore.R
+import konstmih.app.bookstore.bookdetail.BookDetailActivity
 import kotlinx.android.synthetic.main.activity_books_list.*
 import timber.log.Timber
 
@@ -49,6 +51,9 @@ class BooksListActivity : AppCompatActivity(), BooksListAdapter.BooksListAdapter
     }
 
     override fun onBookSelected(book: Book) {
-        TODO("Not yet implemented")
+        //Intent
+        val intent = Intent(this, BookDetailActivity::class.java)
+        intent.putExtra(BookDetailActivity.EXTRA_BOOK_ID, book.id)
+        startActivity(intent)
     }
 }

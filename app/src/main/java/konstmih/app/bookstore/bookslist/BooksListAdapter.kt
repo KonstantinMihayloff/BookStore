@@ -56,6 +56,8 @@ class BooksListAdapter(private val books: List<Book>,
     override fun getItemCount() = books.size
 
     override fun onClick(v: View?) {
-        TODO("Not yet implemented")
+        when(v?.id) {
+            R.id.cardView -> listener?.onBookSelected(v?.tag as Book)
+        }
     }
 }
