@@ -8,6 +8,7 @@ import konstmih.app.bookstore.R
 import kotlinx.android.synthetic.main.activity_book_detail.*
 import timber.log.Timber
 
+// Activity that shows the book detail after clicking on a book
 class BookDetailActivity : AppCompatActivity() {
 
     companion object {
